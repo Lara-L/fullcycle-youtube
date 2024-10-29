@@ -15,10 +15,6 @@ public class VideoUploadController {
   @Autowired
   private VideoService videoService;
 
-//  public VideoUploadController(VideoService videoService) {
-//    this.videoService = videoService;
-//  }
-
   public ResponseEntity<String> uploadChunk(
       @RequestParam("fileId") String fileId,
       @RequestParam("chunkIndex") int chunkIndex,
